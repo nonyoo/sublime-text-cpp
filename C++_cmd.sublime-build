@@ -1,0 +1,25 @@
+// DEFAULT SYSTEM BUILD
+{
+	
+	"cmd": ["g++", "-lm", "-Wall", "-std=c++17", "-Wextra", "-O2", "-fwrapv", "-Wfloat-equal", "-Wconversion", "$file_name","-o", "${file_path}/$file_base_name.exe", "&", "start", "cmd eme", "${file_path}/$file_base_name.exe"],
+                
+	"encoding": "utf-8",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"selector": "source.c++, source.c, source.cxx, source.cpp",
+	"shell": true,
+	"working_dir": "$file_path",
+
+}
+
+// SAVE IN A DIFFERENT FOLDER
+{
+	
+	"cmd": ["g++", "-lm" "-Wall", "-std=c++17", "-Wextra", "-fwrapv", "-Wfloat-equal", "-Wconversion", "$file_name","-o", "$folder/bin/$file_base_name.exe", "&&", "start", "cmd eme", "$folder/bin/$file_base_name.exe"],
+
+	"encoding": "utf-8",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"selector": "source.c++, source.c, source.cxx, source.cpp",
+	"shell": true,
+	"working_dir": "$file_path",
+
+}
