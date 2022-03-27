@@ -56,7 +56,9 @@ En mi caso, mi carpeta de archivos es "cpp" y dentro he creado una carpeta "bin"
 
 **TERMINAL EXTERNO:**
 
-Como sabrán, el código llama una consola externa que ejecuta el programa ya compilado, en este casco, la orden es:
+Como ya muchos sabrán, Sublime Text, tiene una consola integrada, el problema con esta consola es que no permite insertar datos, haciendo imposible interacttuar con nuestros programas. Por eso, la mejor opción es usar la terminal externo. ¿Cómo ocurre esto?
+
+Muy bien, el código llama una consola externa que ejecuta el programa ya compilado, en este casco, la orden es:
 
                 "&&", "start", "cmd eme", "$folder/bin/$file_base_name.exe"
 Bien, vamos explicando lo más importante:
