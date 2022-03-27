@@ -246,7 +246,7 @@ Cómo te abrás percatado, he quitado el punto y coma ";", después del comando 
 
 No la agregué al código original, pero tiene su importancia:
 
-**"encoding": "utf-8",**: Esta línea de código no está en el original, sin embargo, si desea incluirla puede hacerlo sin ningún problema. "utf-8" Es el tipo más popular de codificación Unicode, si sabes del tema, puedes agregar y cambiar a "utf-16", "uft-32", dependiendo de tus necesidates. Más información aquí [Definición UTF](https://techlib.net/definition/utf.html).
+**"encoding": "utf-8",**: Esta línea de código no está en el original, sin embargo, si desea incluirla puede hacerlo sin ningún problema. "utf-8" Es el tipo más popular de codificación Unicode, si sabes del tema, puedes agregar y cambiar a "utf-16", "uft-32", dependiendo de tus necesidades. Más información aquí [Definición UTF](https://techlib.net/definition/utf.html).
 
 Lo recomendable es dejar el código original tal cómo está, debido a que, el mismo Sublime Text, te dará una u otra opción, y por defecto, viene configurado "utf-8".
 
