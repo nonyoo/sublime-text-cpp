@@ -1,8 +1,8 @@
-# C++ build system para Sublime Text
+# Sublime Text C++ build system
 
-Compile and run in a external terminal. Only for Windows.
+Compila y ejecuta archivos C++ en Sublime Text. Solo para Windows.
 
-Compila y ejecuta en una terminal externa. Solo para Windows.
+Compile and run C++ file in Sublime Text. Just for Windows.
 
 ## Este documento contiene información importante del código
 
