@@ -1,13 +1,12 @@
-# C++ build system for Sublime Text.
+# C++ build system for Sublime Text
 
 Compile and run in a external terminal. Only for Windows.
 Compila y ejecuta en una terminal externa. Solo para Windows.
 
-# Este documento contiene información importante del código.
+# Este documento contiene información importante del código
 
-INFORMACIÓN:
-
-Es de autoría propia y el que mejor me ha servido.
+El código lo comparto para hacer más fácil el trabajo y aprendizaje de las personas interesadas en aprender el lenguaje C++.
+En primer lugar, el código es de autoría propia, hecho y re-hecho y el que mejor me ha servido.
 
 IMPORTANTE:
 
