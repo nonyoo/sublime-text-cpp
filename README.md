@@ -41,7 +41,7 @@ Si quieres usar esta opción, debes asegurarte de crear una carpeta general, den
 
 Así mismo, puedes crear una carpeta dentro de tu carpeta de archivos y cambiar el código, tal que así:
 
-    "$folder/cpp/bin/$file_base_name.exe"
+                "$folder/cpp/bin/$file_base_name.exe"
     
 En mi caso, mi carpeta de archivos es "cpp" y dentro he creado una carpeta "bin" entonces, ahí se guardarán los programas.
 
@@ -55,7 +55,7 @@ Bien, vamos explicando lo más importante:
 
 "&&": Significa "y", permite conectar el código.
 
-"star": Como el nombre lo dice inicia la consola donde se ejecutará nuestro programa.
+"star": Como el nombre lo dice, inicia la consola donde se ejecutará nuestro programa.
 
 "cmd eme": Es la consola que ejecuta el programa. La consola se llama "cmd eme" porque así la renombré yo. Pueden poner cualquier nombre, por ejemplo: "cmd /myproject" "cmd myproject", " myproject"), o dejar solo " ". Ten en cuenta que siempre hay un espacio en medio de las comillas dobles. Eso es lo que permite abrir una consola que puedes personalzar. 
 
@@ -71,7 +71,7 @@ De esa forma se generará una consola con el nombre que hayas puesto y que se pu
 
 ¿Porque renombrar la consola con la que trabajo?.
 En pocas palabras porque es más cómodo. Esta consola la puedes editar a tu entorno de trabajo. 
-Dando click derecho en la parte superior de la ventana y yendo a "propiedades" puedes modificar el tamaño y posición de la ventana, el tipo y tamaño de la fuente y el color del fondo y la letra. Y lo mejor, es que si abres un nuevo projecto, la consola seguirá siendo la misma. Debido a que los cambios se guardan en un registro del sistema, como un nuevo perfil.
+Dando click derecho en la parte superior de la ventana y yendo a "propiedades" puedes modificar el tamaño y posición de la ventana, el tipo y tamaño de la fuente y el color del fondo y la letra. Y lo mejor, es que si abres un nuevo proyecto, la consola seguirá siendo la misma. Debido a que los cambios se guardan en un registro del sistema, como un nuevo perfil.
 
 ![Screenshot](Screenshots/7.png)
 
@@ -79,4 +79,43 @@ Sin embargo, si quieres la consola por defecto, solo elimina "cmd eme", tal cual
 
                 "&&", "start", "$folder/bin/$file_base_name.exe"
 
-De esta manera, tu programa se ejecutará en la consola predeterminada. No recomiendo esta opción porque sucede un error con algunos archivos.
+De esta manera, tu programa se ejecutará en la consola predeterminada. No recomiendo esta opción porque sucede un error cuando vas a guardar un archivo.
+Te explicaré en qué consiste y cómo se puede solucionar.
+
+QUÉ NOMBRE PONER A TUS ARCHIVOS:
+
+Es importante la manera en cómo nombras a los archivos con los que trabajas y existen muchas formas de hacerlo. Sin embargo, cuando se programa es posible que un compilador no sepa diferenciar entre "espacios", "puntos", "guiones", etc. Por lo que, cómo muchos sabrán, lo mejor es nombrar a tu archivo con guiones bajos, una sola palabra o nombre, como: main.cpp, myproject.cpp, mycat_and_mydog.cpp, A.cpp; o incluso con números: 1.cpp, 1_3.cpp.
+
+Si nombras así tus archivos no tendrás problemas eliminando "cmd eme" (visto en la sección anterior) de tu código, ya que, el compilador y la consola por defecto podrán reconocer tu programa. Tú codigo puede quedar así sin ningún problema.
+    
+                "&&", "start", "$folder/bin/$file_base_name.exe"
+
+Sin embargo, si eliminas el comando "cmd eme" y estás acostumbrado a nombrar a tus archivos de la siguiente manera: "My project.cpp", "ultimo intento.cpp", "Ejercicio 02.cpp" "1.5.3.cpp"; tendrás un problema, y es que la consola por defecto no reconocerá el programa debido a que tiene espacios y si tu nombre tiene puntos, te saldrá un error el cual no reconoce la extensión del fichero.
+
+Ahora bien, ¿cómo soluciono este inconveniente?
+
+La respuesta obvia es, debes aprender a nombrar a tus archivos usando guiones bajos y nombres de una sola palabra o que estén unidos.
+
+Por otro lado, puedes crear una consola personalizada (visto en la sección anterior). Esto a más de que se ve bonita y la puedes personalizar. Admite los nombres a los que estás acostumbrado, ya sea con guiones, puntos, espacios, etc., entonces, si no quieres lidiar con el problema de los nombres tu código debería verse así:
+               
+               "&&", "start", " Myproject" "$folder/bin/$file_base_name.exe"
+               
+De esa forma podrás guardar, compilar y ejecutar tus programas sin ningún problema.
+
+![Screenshot](Screenshots/8.png)
+
+Y si todavía deseas borrar "cmd eme", otra forma de solucionar este inconveniente es agregando el comando "call" a cualquiera de los dos códigos, así debería quedarte:
+
+               "&&", "start", "call", "$folder/bin/$file_base_name.exe"
+
+Este comando inicia la consola predeterminada y después hace un llamado a tu programa, en pocas palabras, puedes ejecutar tu programa así tenga un nombre con puntos u espacios.
+
+![Screenshot](Screenshots/9.png)
+
+El único problema, (este es un problema personal), es el extenso título que tiene la ventana.
+
+Cómo podrán apreciar en la imagen anterior, el programa nos muestra la dirección completa de la consola y del programa que se ejecuta. Esto no es malo, es muy bueno si te interesa esa información, te permite saber de dónde se ejecuta el programa y puede ayudarte a tener un mejor control en tu trabajo. Además, también la puedes personalizar, son todas ventajas. Sin embargo, prefiero una consola limpia, incluso en el título.
+
+INSTRUCCIONES:
+
+
