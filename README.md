@@ -122,7 +122,7 @@ Te explicaré en qué consiste y cómo se puede solucionar.
 
 Es importante la manera en cómo nombras a los archivos con los que trabajas y existen muchas formas de hacerlo.
 
-Sin embargo, cuando se programa es posible que un compilador no sepa diferenciar entre "espacios", "puntos", "guiones", etc. Por lo que, cómo muchos sabrán, lo mejor es nombrar a tu archivo con guiones bajos, una sola palabra o nombre, como: main.cpp, myproject.cpp, mycat_and_mydog.cpp, A.cpp; o incluso con números: 1.cpp, 1_3.cpp.
+No obstante, cuando se programa es posible que un compilador no sepa diferenciar entre "espacios", "puntos", "guiones", etc. Por lo que, cómo muchos sabrán, lo mejor es nombrar a tu archivo con guiones bajos, una sola palabra o nombre, como: main.cpp, myproject.cpp, mycat_and_mydog.cpp, A.cpp; o incluso con números: 1.cpp, 1_3.cpp.
 
 Si nombras así tus archivos no tendrás problemas eliminando "cmd eme" (visto en la sección anterior) de tu código, ya que el compilador y la consola predeterminada podrán reconocer tu programa. Tú codigo puede quedar así sin ningún problema.
     
