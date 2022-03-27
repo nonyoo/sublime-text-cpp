@@ -288,4 +288,6 @@ Lo recomendable es dejar el código original tal cómo está, debido a que, el m
         
  Esto evitará que tu programa se cierre al instante y te permitirá visualizar tus test, resultados, etc.
  
- - Por cómo tengo configurado mi Sublime Text, el tema es "Ayu light", el color del esquema, layout, "scheme", etc; es breakers, pero está está personalizado a gusto, extensiones cómo "A file icon" para visualizar mejor mis distintos archivos. La fuente que uso [JetBrains Mono](https://www.jetbrains.com/es-es/lp/mono/), la pueden obtener gratis, en lo personal una de las mejores para trabajar.
+ - Por cómo tengo configurado mi Sublime Text, el tema es "Ayu light", el color del esquema, layout, "scheme", etc; es breakers, pero está personalizado a gusto, "A file icon" es una extensión para visualizar mejor mis distintos archivos. La fuente que uso [JetBrains Mono](https://www.jetbrains.com/es-es/lp/mono/), la pueden obtener gratis, en lo personal una de las mejores para trabajar.
+
+### GRACIAS.
