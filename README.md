@@ -56,7 +56,7 @@ En mi caso, mi carpeta de archivos es "cpp" y dentro he creado una carpeta "bin"
 
 **TERMINAL EXTERNO:**
 
-Como sabrán el código llama una consola externa que ejecuta el programa ya compilado, en este casco, la orden es:
+Como sabrán, el código llama una consola externa que ejecuta el programa ya compilado, en este casco, la orden es:
 
                 "&&", "start", "cmd eme", "$folder/bin/$file_base_name.exe"
 Bien, vamos explicando lo más importante:
