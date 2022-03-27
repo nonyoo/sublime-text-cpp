@@ -35,13 +35,13 @@ Todo es gracias a esta parte del código:
                 "$folder/bin/$file_base_name.exe"
 Primero explicaré un poco el código, para qué tengas en cuenta lo que necesitas para usar esta opción:
 
-"$folder/bin/": Es la dirección en donde se guarda el archivo compilado y de donde se ejecutará el programa. Si te das cuenta, leyendo ambos códigos, esta parte es la única que cambia, pero permite una organización de archivos diferente u ordenada.
+**"$folder/bin/"**: Es la dirección en donde se guarda el archivo compilado y de donde se ejecutará el programa. Si te das cuenta, leyendo ambos códigos, esta parte es la única que cambia, pero permite una organización de archivos diferente u ordenada.
 
-"$folder": hace referencia a la carpeta general del proyecto. Como verán en la captura de pantalla, mis archivos se encuentran en la carpeta "cpp", pero la carpeta general es "C++", el comando hacer referencia a esa misma carpeta.
+**"$folder"**: hace referencia a la carpeta general del proyecto. Como verán en la captura de pantalla, mis archivos se encuentran en la carpeta "cpp", pero la carpeta general es "C++", el comando hacer referencia a esa misma carpeta.
 
 ![Screenshot](Screenshots/3.png)
 
-"/bin/": hace referencia a la carpeta donde se guardan los programas. "bin" es un nombre aleatorio que yo mismo puse y puede ser cambiado por cualquier otro nombre, eso sí, aseguranse de crear primero la carpeta junto a su carpeta de archivos.
+**"/bin/"**: hace referencia a la carpeta donde se guardan los programas. "bin" es un nombre aleatorio que yo mismo puse y puede ser cambiado por cualquier otro nombre, eso sí, aseguranse de crear primero la carpeta junto a su carpeta de archivos.
 
 ![Screenshot](Screenshots/4.png)
 
@@ -63,13 +63,13 @@ Esta linea de código, permite que tu archivo " .cpp" pase a ser un programa eje
 
 Explicaré un poco el código:
 
-"g++": Es el compilador que vamos a usar para transformar, por así decirlo, nuestros archivos " .cpp" a ejecutables " .exe".
+**"g++"**: Es el compilador que vamos a usar para transformar, por así decirlo, nuestros archivos " .cpp" a ejecutables " .exe".
 
-"$file_name": Es el nombre del archivo a compilar, en otras palabras, el archivo con el que talvez te encuentras trabajando.
+**"$file_name"**: Es el nombre del archivo a compilar, en otras palabras, el archivo con el que talvez te encuentras trabajando.
 
-"-o": Significa "renombrar", permite cambiar el nombre y extensión del archivo.
+**"-o"**: Significa "renombrar", permite cambiar el nombre y extensión del archivo.
 
-"${file_path}/$file_base_name.exe": Es la dirección donde se guardará el programa y el nombre completo del mismo.
+**"${file_path}/$file_base_name.exe"**: Es la dirección donde se guardará el programa y el nombre completo del mismo.
 
 Cabe mencionar, que en el código original, entre "g++" y "$file_name" se encuentran 2 herramientas. La forma literaria correcta de expresar sería la siguiente:
 
@@ -85,7 +85,7 @@ En resumen, son herramientas que permiten crear un entorno seguro, donde pueda c
 
 Para el código que vamos a usar, he agregado uno, que me parece importante: 
 
-"-Wall": Es la abreviatura de "warn all"; activa (casi) todas las advertencias que g++ puede informarle. Por lo general, es una buena idea, especialmente si es un principiante, porque comprender y corregir esas advertencias puede ayudarlo a solucionar muchos tipos diferentes de problemas en su código. (*Obtenido de stackoverflow*)
+**"-Wall"**: Es la abreviatura de "warn all"; activa (casi) todas las advertencias que g++ puede informarle. Por lo general, es una buena idea, especialmente si es un principiante, porque comprender y corregir esas advertencias puede ayudarlo a solucionar muchos tipos diferentes de problemas en su código. (*Obtenido de stackoverflow*)
 
 Existen muchos tipos de "opciones generales", mientras siga aprendiendo sabrá cuáles son mejores para su entorno de trabajo y cuáles no. Se pueden agregar un sin número de opciones.
 
@@ -97,7 +97,7 @@ Ahora bien, el siguiente no es una herramienta en sí, sino más bien, una etiqu
 
 Obtenido de (www.riptutorial.com/cplusplus), (www.riptutorial.com/Download/cplusplus.pdf).
 
-"stc=c++17": Esto representa la versión del compilador que se está usando. Puede cambiar a cualquier versión siempre que tenga las actualizaciones correspondientes. 
+**"stc=c++17"**: Esto representa la versión del compilador que se está usando. Puede cambiar a cualquier versión siempre que tenga las actualizaciones correspondientes. 
 
 En caso que no le funcione el código, puede que sea por esto, aseguresé de tener actualizado su fichero. Otra alternativa, es usar otra versión, la versión más usada es la del 2011 y 2014, porque implementan muchas características nuevas.
 
@@ -124,11 +124,11 @@ Muy bien, el código llama una consola externa que ejecuta el programa antes com
                 
 Bien, vamos explicando lo más importante:
 
-"&&": Significa "y", permite conectar el código. En otras palabras, gracias a este operador, podemos compilar y ejecutar nuestro programa.
+**"&&"**: Significa "y", permite conectar el código. En otras palabras, gracias a este operador, podemos compilar y ejecutar nuestro programa.
 
-"star": Como el nombre lo dice, inicia la consola donde se ejecutará nuestro programa.
+**"star"**: Como el nombre lo dice, inicia la consola donde se ejecutará nuestro programa.
 
-"cmd eme": Es la consola que ejecuta el programa. La consola se llama "cmd eme" porque así la renombré yo. Pueden poner cualquier nombre, por ejemplo: "cmd /myproject" "cmd myproject", " myproject"), o dejar solo " ". Ten en cuenta que siempre hay un espacio en medio de las comillas dobles. Eso es lo que permite abrir una consola que puedes personalizar.
+**"cmd eme"**: Es la consola que ejecuta el programa. La consola se llama "cmd eme" porque así la renombré yo. Pueden poner cualquier nombre, por ejemplo: "cmd /myproject" "cmd myproject", " myproject"), o dejar solo " ". Ten en cuenta que siempre hay un espacio en medio de las comillas dobles. Eso es lo que permite abrir una consola que puedes personalizar.
 
 ![Screenshot](Screenshots/5.png)
 
