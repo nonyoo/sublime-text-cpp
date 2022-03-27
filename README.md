@@ -10,7 +10,7 @@ El código lo comparto para hacer más fácil el trabajo y aprendizaje de las pe
 
 En primer lugar, el código es de autoría propia, hecho y re-hecho y el que mejor me ha servido.
 
-IMPORTANTE:
+**IMPORTANTE:**
 
 Si revisaron el archivo (cmd_C++.sublime-build) verán que hay dos códigos, ambos funcionan igual, la única diferencia se encuentra en donde se guarda el programa compilado.
 
