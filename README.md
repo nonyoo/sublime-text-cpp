@@ -7,6 +7,7 @@ Compila y ejecuta en una terminal externa. Solo para Windows.
 # Este documento contiene información importante del código
 
 El código lo comparto para hacer más fácil el trabajo y aprendizaje de las personas interesadas en aprender el lenguaje C++.
+
 En primer lugar, el código es de autoría propia, hecho y re-hecho y el que mejor me ha servido.
 
 IMPORTANTE:
