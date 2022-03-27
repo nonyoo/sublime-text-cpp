@@ -1,4 +1,3 @@
-# C++ build system for Sublime Text
 # C++ build system para Sublime Text
 
 Compile and run in a external terminal. Only for Windows.
