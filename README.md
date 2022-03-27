@@ -8,7 +8,7 @@ Compila y ejecuta en una terminal externa. Solo para Windows.
 
 El código lo comparto para hacer más fácil el trabajo y aprendizaje de las personas interesadas en aprender el lenguaje de programación C++.
 
-En primer lugar, el código es de autoría propia, hecho y re-hecho y el que mejor me ha servido.
+En primer lugar, el código es de autoría propia, hecho y re-hecho y el que mejor me ha servido. El documento no es una guía profesional, sino más bien un conjunto de recomendaciones y curiosidades que puede usar para crear, complilar y ejecutar sus programas, haciendo su experiencia programando en C++ más anema.
 
 ### **IMPORTANTE:**
 
@@ -96,11 +96,11 @@ Ahora bien, el siguiente no es una herramienta en sí, sino más bien, una etiqu
 
 ![Screenshot](Screenshots/10.png)
 
-Obtenido de [Riptutorial](www.riptutorial.com/Download/cplusplus.pdf).
+Obtenido de [Riptutorial](https://riptutorial.com/Download/cplusplus.pdf).
 
-**"stc=c++17"**: Esto representa la versión del compilador que se está usando. Puede cambiar a cualquier versión siempre que tenga las actualizaciones correspondientes. 
+**"stc=c++17"**: Esto representa la versión del compilador que se está usando. "C++17" es la versión estable actual y "C++20" es la versión en desarrollo. Puede cambiar a cualquier versión siempre que tenga las actualizaciones correspondientes. En caso que no le funcione el código, puede que sea por esto, asegúrese de tener actualizado su fichero.
 
-En caso que no le funcione el código, puede que sea por esto, aseguresé de tener actualizado su fichero. Otra alternativa, es usar otra versión, la versión más usada es la del 2011 y 2014, porque implementan muchas características nuevas.
+"C++17" y "C++20" implementan características nuevas que están enfocadas a programas/programadores de muy alto nivel. Por lo que, usar otra versiónno genera ningún inconveniete a la hora de programar. La versión más usada es "C++11" de 2011 y "C++14" del 2014.
 
 Si desea modificar el código, debería quedarle así:
 
@@ -112,7 +112,7 @@ Para la versión de 2014:
               
                 "g++", "-Wall", "-std=c++14", "$file_name"
 
-Si está empezando, dejarlo así por defecto es la mejor opción. Para más información consulte el siguiente enlace [Riptutorial C++](www.riptutorial.com/cplusplus)
+Si está empezando, dejarlo así por defecto es la mejor opción. Para más información puede consultar los siguientes enlaces [cppreference.com](https://en.cppreference.com/w/cpp/language/history) y [GeeksforGeeks](https://www.geeksforgeeks.org/history-of-c/)
 
 
 ### **TERMINAL EXTERNO:**
