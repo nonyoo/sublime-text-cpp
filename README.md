@@ -16,9 +16,11 @@ Si revisaron el archivo (cmd_C++.sublime-build) verán que hay dos códigos, amb
 
 1. DEFAULT SYSTEM BUILT:
 
-Guarda el programa en la misma carpeta donde se encuentra el archivo. Si cuando programas usas pocos archivos está es la mejor opción. Caso contrario te puede interesar el segundo código.
+Guarda el programa en la misma carpeta donde se encuentra el archivo. Si cuando programas usas pocos archivos está es la mejor opción.
 
 ![Screenshot](Screenshots/1.png)
+
+Caso contrario te puede interesar el segundo código.
 
 2. SECOND SYSTEM BUILT:
 
