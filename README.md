@@ -106,7 +106,7 @@ De esa forma se generará una consola con el nombre que hayas puesto y que se pu
 **¿Porque renombrar la consola con la que trabajo?**
 
 En pocas palabras porque es más cómodo. Esta consola la puedes editar a tu entorno de trabajo y gusto personal.
-Dando click derecho en la parte superior de la ventana y yendo a "propiedades" puedes modificar el tamaño y posición de la ventana, el tipo y tamaño de la fuente y el color del fondo y la letra. Y lo mejor, es que si abres un nuevo proyecto, la consola seguirá siendo la misma. Debido a que los cambios se guardan enel registro del sistema, como un nuevo perfil.
+Dando click derecho en la parte superior de la ventana y yendo a "propiedades" puedes modificar el tamaño y posición de la ventana, el tipo y tamaño de la fuente y el color del fondo y la letra. Y lo mejor, es que si abres un nuevo proyecto la consola seguirá siendo la misma, gracias a que los cambios se guardan en el registro del sistema, como un nuevo perfil.
 
 ![Screenshot](Screenshots/7.png)
 
