@@ -69,7 +69,7 @@ Explicaré un poco el código:
 
 "-o": Significa "renombrar", permite cambiar el nombre y extensión del archivo.
 
-"${file_path}/$file_base_name.exe": Es la dirección se guardará el programa y el nombre completo del mismo.
+"${file_path}/$file_base_name.exe": Es la dirección donde se guardará el programa y el nombre completo del mismo.
 
 Cabe mencionar, que en el código original, entre "g++" y "$file_name" se encuentran un total de 3 herramientas. La forma literaria correcta de expresar sería la siguiente:
 
