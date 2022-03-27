@@ -82,7 +82,7 @@ Para una mejor explicación de este tema, he decidido ocultarlas. Las mismas ser
 
 Cuando se llama al compilador gcc, g++, etc., normalmente realiza el preprocesamiento, la compilación, el ensamblaje y la vinculación. Las "opciones generales" o mejor conocidas como **"overall options"**, le permiten detener este proceso en una etapa intermedia, así también optimizar y resaltar debidos procesos.
 
-En resumen, son herramientas que permiten crear un entorno seguro, donde pueda correr nuestro programa, te dan control sobre los diferentes procesos a la hora de ejecutar tu porgrama.
+En resumen, son herramientas que permiten crear un entorno seguro donde correrá nuestro programa, te dan control sobre los diferentes procesos a la hora de ejecutar.
 
 Para el código que vamos a usar, he agregado uno, que me parece importante: 
 
