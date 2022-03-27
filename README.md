@@ -15,11 +15,13 @@ En primer lugar, el código es de autoría propia, hecho y re-hecho y el que mej
 Si revisaron el archivo (cmd_C++.sublime-build) verán que hay dos códigos, ambos funcionan igual, la única diferencia se encuentra en donde se guarda el programa compilado.
 
 1. DEFAULT SYSTEM BUILT:
+
 Guarda el programa en la misma carpeta donde se encuentra el archivo. Si cuando programas usas pocos archivos está es la mejor opción. Caso contrario te puede interesar el segundo código.
 
 ![Screenshot](Screenshots/1.png)
 
 2. SECOND SYSTEM BUILT:
+
 Se encarga de guardar el programa compilado en una carpeta diferente. Este es el sistema de compilación que yo uso, me permite ordenar mejor mis diferentes archivos.
 
 ![Screenshot](Screenshots/2.png)
@@ -50,7 +52,7 @@ Así mismo, puedes crear una carpeta dentro de tu carpeta de archivos y cambiar 
 En mi caso, mi carpeta de archivos es "cpp" y dentro he creado una carpeta "bin" entonces, ahí se guardarán los programas.
 
 
-TERMINAL EXTERNO:
+**TERMINAL EXTERNO:**
 
 Como sabrán el código llama una consola externa que ejecuta el programa ya compilado, en este casco, la orden es:
 
@@ -86,7 +88,7 @@ Sin embargo, si quieres la consola por defecto, solo elimina "cmd eme", tal cual
 De esta manera, tu programa se ejecutará en la consola predeterminada. No recomiendo esta opción porque sucede un error cuando vas a guardar un archivo.
 Te explicaré en qué consiste y cómo se puede solucionar.
 
-QUÉ NOMBRE PONER A TUS ARCHIVOS:
+**QUÉ NOMBRE PONER A TUS ARCHIVOS:**
 
 Es importante la manera en cómo nombras a los archivos con los que trabajas y existen muchas formas de hacerlo. Sin embargo, cuando se programa es posible que un compilador no sepa diferenciar entre "espacios", "puntos", "guiones", etc. Por lo que, cómo muchos sabrán, lo mejor es nombrar a tu archivo con guiones bajos, una sola palabra o nombre, como: main.cpp, myproject.cpp, mycat_and_mydog.cpp, A.cpp; o incluso con números: 1.cpp, 1_3.cpp.
 
@@ -120,6 +122,10 @@ El único problema, (este es un problema personal), es el extenso título que ti
 
 Cómo podrán apreciar en la imagen anterior, el programa nos muestra la dirección completa de la consola y del programa que se ejecuta. Esto no es malo, es muy bueno si te interesa esa información, te permite saber de dónde se ejecuta el programa y puede ayudarte a tener un mejor control en tu trabajo. Además, también la puedes personalizar, son todas ventajas. Sin embargo, prefiero una consola limpia, incluso en el título.
 
-INSTRUCCIONES:
+**INFORMACIÓN RELACIONADA:**
+
+
+
+**INSTRUCCIONES:**
 
 
