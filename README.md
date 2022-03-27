@@ -14,7 +14,7 @@ En primer lugar, el código es de autoría propia, hecho y re-hecho y el que mej
 
 Si revisaron el archivo (cmd_C++.sublime-build) verán que hay dos códigos, ambos funcionan igual, la única diferencia se encuentra en donde se guarda el programa compilado.
 
-1. DEFAULT SYSTEM BUILT:
+1. DEFAULT BUILD SYSTEM:
 
 Guarda el programa en la misma carpeta donde se encuentra el archivo. Si cuando programas usas pocos archivos está es la mejor opción.
 
@@ -22,7 +22,7 @@ Guarda el programa en la misma carpeta donde se encuentra el archivo. Si cuando 
 
 Caso contrario te puede interesar el segundo código.
 
-2. SECOND SYSTEM BUILT:
+2. SECONDARY BUILD SYSTEM:
 
 Se encarga de guardar el programa compilado en una carpeta diferente. Este es el sistema de compilación que yo uso, me permite ordenar mejor mis diferentes archivos.
 
