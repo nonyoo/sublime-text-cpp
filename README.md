@@ -183,7 +183,7 @@ De esa forma podrás guardar, compilar y ejecutar tus programas sin ningún prob
 
                "&&", "start", "call", "$folder/bin/$file_base_name.exe"
 
-Este comando inicia la consola predeterminada y después hace un llamado a tu programa, en pocas palabras, puedes ejecutar tu programa así tenga un nombre con puntos u espacios.
+Este comando inicia la consola predeterminada y después hace un llamado a tu programa, en pocas palabras, puedes ejecutar tu programa así tenga un nombre con puntos o espacios.
 
 ![Screenshot](Screenshots/9.png)
 
