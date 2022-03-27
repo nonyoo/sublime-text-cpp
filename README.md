@@ -165,7 +165,7 @@ Si nombras así tus archivos no tendrás problemas eliminando "cmd eme" (visto e
     
                 "&&", "start", "${file_path}/$file_base_name.exe"
 
-Sin embargo, si eliminas el comando "cmd eme" y estás acostumbrado a nombrar a tus archivos de la siguiente manera: "My project.cpp", "ultimo intento.cpp", "Ejercicio 02.cpp" "1.5.3.cpp"; tendrás un problema, el archivo se compilará normalmente en tu fichero, **pero**, la consola por defecto no reconocerá el programa debido a que tiene espacios y si tu nombre tiene puntos, te saldrá un error el cual no reconoce la extensión del fichero.
+Sin embargo, si eliminas el comando "cmd eme" y estás acostumbrado a nombrar a tus archivos de la siguiente manera: "My project.cpp", "ultimo intento.cpp", "Ejercicio 02.cpp" "1.5.3.cpp"; tendrás un problema, el archivo se compilará normalmente en tu fichero, **pero**, la consola por defecto no reconocerá el programa debido a que tiene espacios y si el nombre tiene puntos, te saldrá un error el cual no reconoce la extensión del fichero.
 
 Ahora bien, ¿cómo soluciono este inconveniente?
 
