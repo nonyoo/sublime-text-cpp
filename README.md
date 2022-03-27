@@ -4,17 +4,17 @@ Compile and run in a external terminal. Only for Windows.
 
 Compila y ejecuta en una terminal externa. Solo para Windows.
 
-# Este documento contiene información importante del código
+## Este documento contiene información importante del código
 
 El código lo comparto para hacer más fácil el trabajo y aprendizaje de las personas interesadas en aprender el lenguaje de programación C++.
 
 En primer lugar, el código es de autoría propia, hecho y re-hecho y el que mejor me ha servido.
 
-**IMPORTANTE:**
+### **IMPORTANTE:**
 
 Si revisaron el archivo (cmd_C++.sublime-build) verán que hay dos códigos, ambos funcionan igual, la única diferencia se encuentra en donde se guarda el programa compilado.
 
-1. DEFAULT BUILD SYSTEM:
+**1. DEFAULT BUILD SYSTEM:**
 
 Guarda el programa en la misma carpeta donde se encuentra el archivo. Si cuando programas usas pocos archivos está es la mejor opción.
 
@@ -22,7 +22,7 @@ Guarda el programa en la misma carpeta donde se encuentra el archivo. Si cuando 
 
 Caso contrario te puede interesar el segundo código.
 
-2. SECONDARY BUILD SYSTEM:
+**2. SECONDARY BUILD SYSTEM:**
 
 Se encarga de guardar el programa compilado en una carpeta diferente. Este es el sistema de compilación que yo uso, me permite ordenar mejor mis diferentes archivos.
 
@@ -53,7 +53,8 @@ Así mismo, puedes crear una carpeta dentro de tu carpeta de archivos y cambiar 
     
 En mi caso, mi carpeta de archivos es "cpp" y dentro he creado una carpeta "bin" entonces, ahí se guardarán los programas.
 
-**COMPILAR:**
+
+### **COMPILAR:**
 
 Una vez que terminas de crear tu archivo " .cpp", el siguiente paso es compilarlo, y para ello, se usa el siguiente comando:
 
@@ -77,7 +78,7 @@ Cabe mencionar, que en el código original, entre "g++" y "$file_name" se encuen
                 
 Para una mejor explicación de este tema, he decidido ocultarlas. Las mismas serán explicadas a continuación:
 
-**OPCIONES GENERALES**:
+### **OPCIONES GENERALES**:
 
 Cuando se llama al compilador gcc, g++, etc., normalmente realiza el preprocesamiento, la compilación, el ensamblaje y la vinculación. Las "opciones generales" o mejor conocidas como **"overall options"**, le permiten detener este proceso en una etapa intermedia, así también optimizar y resaltar debidos procesos.
 
@@ -85,17 +86,17 @@ En resumen, son herramientas que permiten crear un entorno seguro, donde pueda c
 
 Para el código que vamos a usar, he agregado uno, que me parece importante: 
 
-**"-Wall"**: Es la abreviatura de "warn all"; activa (casi) todas las advertencias que g++ puede informarle. Por lo general, es una buena idea, especialmente si es un principiante, porque comprender y corregir esas advertencias puede ayudarlo a solucionar muchos tipos diferentes de problemas en su código. (*Obtenido de stackoverflow*)
+**"-Wall"**: Es la abreviatura de "warn all"; activa algunas advertencias que g++ puede informarle sobre su compilado. Por lo general, es una buena idea, especialmente si es un principiante, porque comprender y corregir esas advertencias puede ayudarlo a solucionar muchos tipos diferentes de problemas en su código. (*Obtenido de [Stackoverflow](https://stackoverflow.com/questions/2408038/what-does-wall-in-g-wall-test-cpp-o-test-do)*)
 
-Existen muchos tipos de "opciones generales", mientras siga aprendiendo sabrá cuáles son mejores para su entorno de trabajo y cuáles no. Se pueden agregar un sin número de opciones.
+Existen muchos tipos de "opciones generales", mientras siga aprendiendo sabrá cuáles son mejores para su entorno de trabajo y cuáles no, se pueden agregar un sin número de opciones. 
 
-En el siguiente link, encontrará más información acerca de los mismos: https://linux.die.net/man/1/gcc
+Este es un tema que no abarcaré a profundidad, porque depende mucho de la necesidad, el tipo de programa, el número de tareas, la extensibilidad, etc., que se use en su proyecto. Sea el caso, en la siguiente página [Linux die net](https://linux.die.net/man/1/gcc) encontrará más información (*demasiada*).
 
 Ahora bien, el siguiente no es una herramienta en sí, sino más bien, una etiqueta:
 
 ![Screenshot](Screenshots/10.png)
 
-Obtenido de (www.riptutorial.com/cplusplus), (www.riptutorial.com/Download/cplusplus.pdf).
+Obtenido de [Riptutorial](www.riptutorial.com/Download/cplusplus.pdf).
 
 **"stc=c++17"**: Esto representa la versión del compilador que se está usando. Puede cambiar a cualquier versión siempre que tenga las actualizaciones correspondientes. 
 
@@ -111,10 +112,10 @@ Para la versión de 2014:
               
                 "g++", "-Wall", "-std=c++14", "$file_name"
 
-Si está empezando, dejarlo así por defecto es la mejor opción.
+Si está empezando, dejarlo así por defecto es la mejor opción. Para más información consulte el siguiente enlace [Riptutorial C++](www.riptutorial.com/cplusplus)
 
 
-**TERMINAL EXTERNO:**
+### **TERMINAL EXTERNO:**
 
 Como ya muchos sabrán, Sublime Text, tiene una consola integrada, el problema con esta consola es que no permite insertar datos, haciendo imposible interactuar con nuestros programas. Por eso, la mejor opción es usar la consola externa o "cmd".
 
@@ -140,7 +141,7 @@ De esa forma se generará una consola con el nombre que hayas puesto y que se pu
 
 ![Screenshot](Screenshots/6.png)
 
-**¿Porque renombrar la consola con la que trabajo?**
+### **¿Porque renombrar la consola con la que trabajo?**
 
 En pocas palabras porque es más cómodo. Esta consola la puedes editar a tu entorno de trabajo y gusto personal.
 Dando click derecho en la parte superior de la ventana y yendo a "propiedades" puedes modificar el tamaño y posición de la ventana, el tipo, tamaño y color de la fuente y fondo. Y lo mejor, es que si abres un nuevo proyecto la consola seguirá siendo la misma, gracias a que los cambios se guardan en el registro del sistema, como un nuevo perfil.
@@ -155,7 +156,7 @@ De esta manera, tu programa se ejecutará en la consola predeterminada. No recom
 
 Te explicaré en qué consiste y cómo se puede solucionar.
 
-**QUÉ NOMBRE PONER A TUS ARCHIVOS:**
+### **CÓMO NOMBRAR A TUS ARCHIVOS:**
 
 Es importante la manera en cómo nombras a los archivos con los que trabajas y existen muchas formas de hacerlo.
 
@@ -167,7 +168,7 @@ Si nombras así tus archivos no tendrás problemas eliminando "cmd eme" (visto e
 
 Sin embargo, si eliminas el comando "cmd eme" y estás acostumbrado a nombrar a tus archivos de la siguiente manera: "My project.cpp", "ultimo intento.cpp", "Ejercicio 02.cpp" "1.5.3.cpp"; tendrás un problema, el archivo se compilará normalmente en tu fichero, **pero**, la consola por defecto no reconocerá el programa debido a que tiene espacios y si el nombre tiene puntos, te saldrá un error el cual no reconoce la extensión del fichero.
 
-Ahora bien, ¿cómo soluciono este inconveniente?
+Ahora bien, **¿cómo soluciono este inconveniente?**
 
 La respuesta obvia es, debes aprender a nombrar a tus archivos usando guiones bajos y nombres de una sola palabra o que estén unidos.
 
@@ -191,6 +192,6 @@ El único problema (esto es un problema personal) es el extenso título que tien
 
 Cómo podrán apreciar en la imagen anterior, el programa nos muestra la dirección completa de la consola y del programa que se ejecuta. Esto no es malo, es muy bueno si te interesa esa información, te permite saber de dónde se ejecuta el programa y puede ayudarte a tener un mejor control en tu trabajo. Además, también la puedes personalizar, son todas ventajas. A pesar de ello, prefiero una consola limpia, incluso en el título.
 
-**INSTRUCCIONES:**
+### **INSTRUCCIONES:**
 
 
