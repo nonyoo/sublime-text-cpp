@@ -96,11 +96,11 @@ Ahora bien, el siguiente no es una herramienta en sí, sino más bien, una etiqu
 
 ![Screenshot](Screenshots/10.png)
 
-Obtenido de [Riptutorial](https://riptutorial.com/Download/cplusplus.pdf).
+Obtenido de [Riptutorial](https://riptutorial.com/cplusplus).
 
 **"stc=c++17"**: Esto representa la versión del compilador que se está usando. "C++17" es la versión estable actual y "C++20" es la versión en desarrollo. Puede cambiar a cualquier versión siempre que tenga las actualizaciones correspondientes. En caso que no le funcione el código, puede que sea por esto, asegúrese de tener actualizado su fichero.
 
-"C++17" y "C++20" implementan características nuevas que están enfocadas a programas/programadores de muy alto nivel. Por lo que, usar otra versiónno genera ningún inconveniete a la hora de programar. La versión más usada es "C++11" de 2011 y "C++14" del 2014.
+"C++17" y "C++20" implementan características nuevas que están enfocadas a programas/programadores de muy alto nivel. Por lo que, usar otra versión no genera ningún inconveniete a la hora de programar. La versión estándar y la más usada es "C++11" de 2011 y "C++14" de 2014.
 
 Si desea modificar el código, debería quedarle así:
 
