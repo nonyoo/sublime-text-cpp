@@ -238,7 +238,7 @@ Algunas curiosidades que todavía no he explicado del código:
 
 Cómo te abrás percatado, he quitado el punto y coma ";", después del comando "getch()". El comentario en rojo es "file_regex" diciendo que ahí falta algo, caso contrario tu archivo no se compilará y muchos menos se ejecutará. Es una herramienta muy buena para dar con errores de tipeo. Puedes desactivarla si siempre escribes código de manera perfecta (sarcasmo). Pueden revisar el siguiente enlace para más información [Build Systems](https://www.sublimetext.com/docs/build_systems.html).
 
-**"selector": "source.c++, source.c, source.cxx, source.cpp",**: Esta línea de código establece los archivos con los que trabajarás, lo normal sería tener solo "souce.cpp", no obstante, se puede guardar archivos con esas diferentes extensiones.
+**"selector": "source.c++, source.c, source.cxx, source.cpp",**: Esta línea de código establece los archivos con los que trabajarás, lo normal sería tener solo "source.cpp", no obstante, se puede guardar archivos con esas diferentes extensiones.
 
 **"shell": true,**: Una linea de comando muy importante, dejarla por defecto, permite que se ejecute la consola externa.
 
