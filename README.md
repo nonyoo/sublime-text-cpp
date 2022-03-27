@@ -224,11 +224,65 @@ Ahora bien para ambos casos, reinicia Sublime Text y en Herramientas, Build Syst
 
 ![Screenshot](Screenshots/14.png)
 
-Para compilar en Sublime Text los atajos son <<F7>> y <<Ctrl+B>> de manera predeterminada.
+Para compilar en Sublime Text los atajos son la tecla "F7" y el comando "Ctrl+B" de manera predeterminada.
 
 ![Screenshot](Screenshots/15.png)
 
-**OBSERVACIONES:**
+### INFORMACIÓN EXTRA:
+
+Algunas curiosidades que todavía no he explicado del código:
+
+**""file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",":** Permite capturar cuatro piezas de información en la salida (output): archivo, línea, columna y texto de error. En palabras sencillas si el programa detecta una incongruencia en tu código te notificará, véase el ejemplo:
+
+![Screenshot](Screenshots/16.png)
+
+Cómo te abrás percatado, he quitado el punto y coma ";", después del comando "getch()". El comentario en rojo es "file_regex" diciendo que ahí falta algo, caso contrario tu archivo no se compilará y muchos menos se ejecutará. Es una herramienta muy buena para dar con errores de tipeo. Puedes desactivarla si siempre escribes código de manera perfecta (sarcasmo). Pueden revisar el siguiente enlace para más información [Build Systems](https://www.sublimetext.com/docs/build_systems.html).
+
+**"selector": "source.c++, source.c, source.cxx, source.cpp",**: Esta línea de código establece los archivos con los que trabajarás, lo normal sería tener solo "souce.cpp", no obstante, se puede guardar archivos con esas diferentes extensiones.
+
+**"shell": true,**: Una linea de comando muy importante, dejarla por defecto, permite que se ejecute la consola externa.
+
+**"working_dir": "$file_path",**: Es la dirección en la que me encuentro trabajando, ojo, referencia la dirección del archivo " .cpp", y no el ejectuable " .exe".
+
+No la agregué al código original, pero tiene su importancia:
+
+**"encoding": "utf-8",**: Esta línea de código no está en el original, sin embargo, si desea incluirla puede hacerlo sin ningún problema. "utf-8" Es el tipo más popular de codificación Unicode, si sabes del tema, puedes agregar y cambiar a "utf-16", "uft-32",
 
 
 
+## **OBSERVACIONES & CURIOSIDADES:**
+
+- Si modifican algo del código y no arranca, revisen las comas, comillas, y llaves, son los principales problemas a la hora de crear un Build System.
+- Si eres nuevo programando y tienes errores a la hora de visualizar tus programas, por ejemplo, cuando se ejecuta la ventana se cierra al milisegundo. La solución es añadir nuevas librerías a tu código, está "stldlib" y "conio", cómo las mejores opciones, ejemplo corto sería:
+
+**conio**
+
+        #include <iostream>
+        #include <conio.h> // Librería conio
+        using namespace std;
+        
+        int main (){
+	
+	        cout<<"Hello world :e"<<endl;
+
+	        getch(); // Comando getch() 
+ 	        return 0;
+        }
+        
+ **stdlib**
+        
+        #include <iostream>
+        #include <stdlib.h> // Librería stdlib
+        using namespace std;
+        
+        int main (){
+	
+	        cout<<"Hello world :e"<<endl;
+
+	        system("pause"); // Comando system() 
+ 	        return 0;
+        }
+        
+ Esto evitará que tu programa se cierre al instante y te permitirá visualizar tus test, resultados, etc.
+ 
+ - Por cómo tengo configurado mi Sublime Text, el tema es "Ayu light", el color del esquema, layout, "scheme", etc; es breakers, pero está está personalizado a gusto, extensiones cómo "A file icon" para visualizar mejor mis distintos archivos. La fuente que uso [JetBrains Mono](https://www.jetbrains.com/es-es/lp/mono/), la pueden obtener gratis, en lo personal una de las mejores para trabajar.
