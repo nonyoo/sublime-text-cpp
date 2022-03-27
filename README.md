@@ -28,7 +28,7 @@ Se encarga de guardar el programa compilado en una carpeta diferente. Este es el
 
 ![Screenshot](Screenshots/2.png)
 
-Cómo funciona lo de guardar en otra carpeta:
+**Cómo funciona lo de guardar en otra carpeta:**
 
 Todo es gracias a esta parte del código:
 
@@ -77,7 +77,7 @@ De esa forma se generará una consola con el nombre que hayas puesto y que se pu
 
 ![Screenshot](Screenshots/6.png)
 
-¿Porque renombrar la consola con la que trabajo?.
+**¿Porque renombrar la consola con la que trabajo?**
 En pocas palabras porque es más cómodo. Esta consola la puedes editar a tu entorno de trabajo. 
 Dando click derecho en la parte superior de la ventana y yendo a "propiedades" puedes modificar el tamaño y posición de la ventana, el tipo y tamaño de la fuente y el color del fondo y la letra. Y lo mejor, es que si abres un nuevo proyecto, la consola seguirá siendo la misma. Debido a que los cambios se guardan en un registro del sistema, como un nuevo perfil.
 
