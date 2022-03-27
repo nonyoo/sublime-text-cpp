@@ -212,7 +212,7 @@ Renombra a tu archivo cómo quieras, pero la extensión del mismo debe ser **" .
 
 **2. Copir el código descargado:**
 
-La otra manera es descargando el archivo "cmd_C++.sublime-build" de este repositorio, y con el bloc de notas o el mismo Sublime text, eliminar el código que no vayas a usar y dejar uno de los dos. Una vez guardado. Dirígete a la carpeta del controlador de paquetes de Sublime Text.
+La otra manera es descargando el archivo "cmd_C++.sublime-build" de este repositorio, y con el bloc de notas o el mismo Sublime text, eliminar el código que no vayas a usar y dejar uno de los dos. Una vez guardado, dirígete a la carpeta del controlador de paquetes de Sublime Text.
 
 ![Screenshot](Screenshots/13.png)
 
