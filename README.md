@@ -194,4 +194,41 @@ Cómo podrán apreciar en la imagen anterior, el programa nos muestra la direcci
 
 ### **INSTRUCCIONES:**
 
+Este proceso es para aquellos que tienen problemas a la hora usar el código. Cómo muchos, yo en un principio no sabía donde iba cada configuración, lo comparto para agilizar la instalación.
+
+Para instalar el build systems se puede hacer de dos maneras:
+
+**1. Crear un nuevo Build System:**
+
+Lo primero es abrir Sublime Text, en herramientas, Build Systems, y la última opción "Nuevo Build System";
+
+![Screenshot](Screenshots/11.png)
+
+Esto te abrirá una nueva hoja de trabajo, borrás las líneas de código que están por defecto "{ "shell_cmd": "make" }" y a continuación, copias **uno** de los dos códigos presentes en el archivo "cmd_C++.sublime-build" y guardas.
+
+Renombra a tu archivo cómo quieras, pero la extensión del mismo debe ser **" .sublime-build"**.
+
+![Screenshot](Screenshots/12.png)
+
+**2. Copir el código descargado:**
+
+La otra manera es descargando el archivo "cmd_C++.sublime-build" de este repertorio, y con el bloc de notas o el mismo Sublime text, eliminar el código que no vayas a usar y dejar uno de los dos. Una vez guardado. Dirígete a la carpeta del controlador de paquetes de Sublime Text.
+
+![Screenshot](Screenshots/13.png)
+
+Ahí encontrarás una carpeta llamada "User" o "Usuario", si no tienes intaladas extensiones, será la única presente. Entra en la carpeta y pega el archivo. Puedes cambiarle el nombre a cómo te parezca más cómodo.
+
+
+
+Ahora bien para ambos casos, reinicia Sublime Text y en Herramientas, Build System, encontrarás el tuyo con el nombre que hayas puesto, lo seleccionas y ya podrás compilar y ejecutar tus programas.
+
+![Screenshot](Screenshots/14.png)
+
+Para compilar en Sublime Text los atajos son <<F7>> y <<Ctrl+B>> de manera predeterminada.
+  
+![Screenshot](Screenshots/14.png)
+
+**OBSERVACIONES:**
+
+
 
