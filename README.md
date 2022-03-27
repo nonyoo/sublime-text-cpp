@@ -71,11 +71,48 @@ Explicaré un poco el código:
 
 "${file_path}/$file_base_name.exe": Es la dirección donde se guardará el programa y el nombre completo del mismo.
 
-Cabe mencionar, que en el código original, entre "g++" y "$file_name" se encuentran un total de 3 herramientas. La forma literaria correcta de expresar sería la siguiente:
+Cabe mencionar, que en el código original, entre "g++" y "$file_name" se encuentran 2 herramientas. La forma literaria correcta de expresar sería la siguiente:
 
                  "g++", [...] "$file_name"
                 
-Para una mejor explicación de este tema, he decidido ocultarlas. Las mismas serán explicadas más adelante en detalle.
+Para una mejor explicación de este tema, he decidido ocultarlas. Las mismas serán explicadas a continuación:
+
+**OPCIONES GENERALES**:
+
+Cuando se llama al compilador gcc, g++, etc., normalmente realiza el preprocesamiento, la compilación, el ensamblaje y la vinculación. Las "opciones generales" o mejor conocidas como **"overall options"**, le permiten detener este proceso en una etapa intermedia, así también optimizar y resaltar debidos procesos.
+
+En resumen, son herramientas que permiten crear un entorno seguro, donde pueda correr nuestro programa, te dan control sobre los diferentes procesos a la hora de ejecutar tu porgrama.
+
+Para el código que vamos a usar, he agregado uno, que me parece importante: 
+
+"-Wall": Es la abreviatura de "warn all"; activa (casi) todas las advertencias que g++ puede informarle. Por lo general, es una buena idea, especialmente si es un principiante, porque comprender y corregir esas advertencias puede ayudarlo a solucionar muchos tipos diferentes de problemas en su código. (*Obtenido de stackoverflow*)
+
+Existen muchos tipos de "opciones generales", mientras siga aprendiendo sabrá cuáles son mejores para su entorno de trabajo y cuáles no. Se pueden agregar un sin número de opciones.
+
+En el siguiente link, encontrará más información acerca de los mismos: https://linux.die.net/man/1/gcc
+
+Ahora bien, el siguiente no es una herramienta en sí, sino más bien, una etiqueta:
+
+![Screenshot](Screenshots/10.png)
+
+Obtenido de (www.riptutorial.com/cplusplus), (www.riptutorial.com/Download/cplusplus.pdf).
+
+"stc=c++17": Esto representa la versión del compilador que se está usando. Puede cambiar a cualquier versión siempre que tenga las actualizaciones correspondientes. 
+
+En caso que no le funcione el código, puede que sea por esto, aseguresé de tener actualizado su fichero. Otra alternativa, es usar otra versión, la versión más usada es la del 2011 y 2014, porque implementan muchas características nuevas.
+
+Si desea modificar el código, debería quedarle así:
+
+Para la versión de 2011:
+
+                "g++", "-Wall", "-std=c++11", "$file_name"
+                
+Para la versión de 2014:
+              
+                "g++", "-Wall", "-std=c++14", "$file_name"
+
+Si está empezando, dejarlo así por defecto es la mejor opción.
+
 
 **TERMINAL EXTERNO:**
 
@@ -153,10 +190,6 @@ Este comando inicia la consola predeterminada y después hace un llamado a tu pr
 El único problema (esto es un problema personal) es el extenso título que tiene la ventana.
 
 Cómo podrán apreciar en la imagen anterior, el programa nos muestra la dirección completa de la consola y del programa que se ejecuta. Esto no es malo, es muy bueno si te interesa esa información, te permite saber de dónde se ejecuta el programa y puede ayudarte a tener un mejor control en tu trabajo. Además, también la puedes personalizar, son todas ventajas. A pesar de ello, prefiero una consola limpia, incluso en el título.
-
-**INFORMACIÓN RELACIONADA:**
-
-
 
 **INSTRUCCIONES:**
 
