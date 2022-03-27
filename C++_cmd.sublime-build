@@ -1,4 +1,5 @@
 // DEFAULT SYSTEM BUILD
+
 {
 	
 	"cmd": ["g++", "-lm", "-Wall", "-std=c++17", "-Wextra", "-O2", "-fwrapv", "-Wfloat-equal", "-Wconversion", "$file_name","-o", "${file_path}/$file_base_name.exe", "&", "start", "cmd eme", "${file_path}/$file_base_name.exe"],
@@ -12,6 +13,7 @@
 }
 
 // SAVE IN A DIFFERENT FOLDER
+
 {
 	
 	"cmd": ["g++", "-lm" "-Wall", "-std=c++17", "-Wextra", "-fwrapv", "-Wfloat-equal", "-Wconversion", "$file_name","-o", "$folder/bin/$file_base_name.exe", "&&", "start", "cmd eme", "$folder/bin/$file_base_name.exe"],
