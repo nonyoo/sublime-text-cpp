@@ -225,8 +225,8 @@ Ahora bien para ambos casos, reinicia Sublime Text y en Herramientas, Build Syst
 ![Screenshot](Screenshots/14.png)
 
 Para compilar en Sublime Text los atajos son <<F7>> y <<Ctrl+B>> de manera predeterminada.
-  
-![Screenshot](Screenshots/14.png)
+
+![Screenshot](Screenshots/15.png)
 
 **OBSERVACIONES:**
 
