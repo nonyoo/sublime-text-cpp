@@ -256,7 +256,7 @@ Lo recomendable es dejar el código original tal cómo está, debido a que, el m
 
 - Si modifican algo del código y no arranca, revisen las comas, comillas, y llaves, son los principales problemas a la hora de crear un Build System.
 
-- Si eres nuevo programando y tienes errores a la hora de visualizar tus programas, por ejemplo, cuando se ejecuta la ventana se cierra al milisegundo. La solución es añadir nuevas librerías a tu código, está "stldlib" y "conio", cómo las mejores opciones, ejemplo corto sería:
+- Si eres nuevo programando y tienes errores a la hora de visualizar tus programas, por ejemplo, cuando se ejecuta la ventana se cierra al milisegundo. La solución es añadir nuevas librerías a tu código, está "stdlib" y "conio", cómo las mejores opciones, un ejemplo corto sería:
 
 **conio**
 
