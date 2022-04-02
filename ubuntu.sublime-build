@@ -1,0 +1,27 @@
+// DEFAULT BUILD SYSTEM
+// SISTEMA DE COMPILACIÓN PREDETERMINADO
+
+{
+
+    "shell_cmd": "g++ -lm -Wall -std=c++17 '$file_name' -o '$file_path/$file_base_name' && gnome-terminal --wait --title=C++ -- bash -c \" '$file_path/$file_base_name' ; read -p '\n\nPress any key to continue...'\" ", 
+      
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "selector": "source.c++, source.c, source.cxx, source.cpp",
+    "working_dir": "${file_path}",
+    "shell": true,
+
+}
+
+// SECONDARY BUILD SYSTEM
+// SISTEMA DE COMPILACIÓN SECUNDARIO
+	
+{
+
+    "shell_cmd": "g++ -lm -Wall -std=c++17 '$file_name' -o '$folder/bin/$file_base_name' && gnome-terminal --wait --title=C++ -- bash -c \" '$folder/bin/$file_base_name' ; read -p '\n\nPress any key to continue...'\" ",
+
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "selector": "source.c++, source.c, source.cxx, source.cpp",
+    "working_dir": "${file_path}",
+    "shell": true,
+
+}
