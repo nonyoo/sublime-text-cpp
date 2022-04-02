@@ -1,18 +1,20 @@
 # Sublime Text C++ build system
 
-Compila y ejecuta archivos C++ en Sublime Text. Solo para Windows.
+Compila y ejecuta archivos C++ en Sublime Text. Para Windows y Ubuntu.
 
-Compile and run C++ file in Sublime Text. Just for Windows.
+Compile and run C++ file in Sublime Text. Windows and Ubuntu.
 
 ## Este documento contiene información importante del código
 
 El código lo comparto para hacer más fácil el trabajo y aprendizaje de las personas interesadas en aprender el lenguaje de programación C++.
 
-En primer lugar, el código es de autoría propia, hecho y re-hecho y el que mejor me ha servido. El documento no es una guía profesional, sino más bien un conjunto de recomendaciones y curiosidades que puede usar para crear, complilar y ejecutar sus programas, haciendo su experiencia programando en C++ más anema.
+En primer lugar, el código es de autoría propia, hecho y re-hecho y el que mejor me ha servido. El documento no es una guía profesional, sino más bien un conjunto de recomendaciones y curiosidades que puede usar para crear, compilar y ejecutar sus programas, haciendo su experiencia programando en C++ más anema.
+
+El *Sistem Build* está disponible para Windows y Ubuntu, el código tiene pequeñas diferencias para distintos sistemas operativos, sin embargo, para este documento me centro más en la explicación del compilador para Windows, si están interesados puedo hacer una guía igual para Ubuntu.
 
 ### **IMPORTANTE:**
 
-Si revisaron el archivo (cmd_C++.sublime-build) verán que hay dos códigos, ambos funcionan igual, la única diferencia se encuentra en donde se guarda el programa compilado.
+Si revisaron el archivo (windows.sublime-build) o (ubuntu.sublime-build) verán que hay dos códigos, ambos funcionan igual, la única diferencia se encuentra en donde se guarda el programa compilado.
 
 **1. DEFAULT BUILD SYSTEM:**
 
@@ -70,7 +72,7 @@ Explicaré un poco el código:
 
 **"-o"**: Significa "renombrar", permite cambiar el nombre y extensión del archivo.
 
-**"${file_path}/$file_base_name.exe"**: Es la dirección donde se guardará el programa y el nombre completo del mismo.
+**"$file_path/$file_base_name.exe"**: Es la dirección donde se guardará el programa y el nombre completo del mismo.
 
 Cabe mencionar, que en el código original, entre "g++" y "$file_name" se encuentran 2 herramientas. La forma literaria correcta de expresar sería la siguiente:
 
@@ -115,7 +117,7 @@ Para la versión de 2014:
 Si está empezando, dejarlo así por defecto es la mejor opción. Para más información puede consultar los siguientes enlaces [cppreference.com](https://en.cppreference.com/w/cpp/language/history) y [GeeksforGeeks](https://www.geeksforgeeks.org/history-of-c/)
 
 
-### **TERMINAL EXTERNO:**
+### **TERMINAL EXTERNO (WINDOWS):**
 
 Como ya muchos sabrán, Sublime Text, tiene una consola integrada, el problema con esta consola es que no permite insertar datos, haciendo imposible interactuar con nuestros programas. Por eso, la mejor opción es usar la consola externa o "cmd".
 
@@ -212,7 +214,7 @@ Renombra a tu archivo cómo quieras, pero la extensión del mismo debe ser **" .
 
 **2. Copiar el código descargado:**
 
-La otra manera es descargando el archivo "cmd_C++.sublime-build" de este repositorio, y con el bloc de notas o el mismo Sublime text, eliminar el código que no vayas a usar y dejar uno de los dos. Una vez guardado, dirígete a la carpeta del controlador de paquetes de Sublime Text.
+La otra manera es descargando el archivo "windows.sublime-build" o "ubuntu.sublime-build" de este repositorio, y con el bloc de notas o el mismo Sublime text, eliminar el código que no vayas a usar y dejar uno de los dos. Una vez guardado, dirígete a la carpeta del controlador de paquetes de Sublime Text.
 
 ![Screenshot](Screenshots/13.png)
 
@@ -286,8 +288,11 @@ Lo recomendable es dejar el código original tal cómo está, debido a que, el m
  	        return 0;
         }
         
- Esto evitará que tu programa se cierre al instante y te permitirá visualizar tus test, resultados, etc.
+Esto evitará que tu programa se cierre al instante y te permitirá visualizar tus test, resultados, etc.
+
+Esta opción es valida para Windows, si estás usando linux sabrás que no se instalan por defecto esas librerías, pero el mismo código está hecho para que no sea necesario el uso de las librerías, por lo que, puedes ejecutar tus programas con total normalidad.
  
  - Por cómo tengo configurado mi Sublime Text, el tema es "Ayu light", el color del esquema, layout, "scheme", etc; es breakers, pero está personalizado a gusto, "A file icon" es una extensión para visualizar mejor mis distintos archivos. La fuente que uso [JetBrains Mono](https://www.jetbrains.com/es-es/lp/mono/), la pueden obtener gratis, en lo personal una de las mejores para trabajar.
+
 
 ### GRACIAS.
