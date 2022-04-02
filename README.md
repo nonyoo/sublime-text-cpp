@@ -58,7 +58,7 @@ En mi caso, mi carpeta de archivos es "cpp" y dentro he creado una carpeta "bin"
 
 Una vez que terminas de crear tu archivo " .cpp", el siguiente paso es compilarlo, y para ello, se usa el siguiente comando:
 
-                "g++", "$file_name", "-o", "${file_path}/$file_base_name.exe"
+                "g++", "$file_name", "-o", "$file_path/$file_base_name.exe"
 
 Esta linea de código, permite que tu archivo " .cpp" pase a ser un programa ejecutable " .exe"; en pocas palabras eso es compilar. Muy bien, para ello necesitaremos tener los compiladores ya instalados en nuestra pc, y haber agregado la carpeta donde están los compiladores en la variable de entorno "path". Para obtener los archivos puedes usar Mingw, buscar en internet el que mejor se ajuste a tu entorno de trabajo y cómo instalarlo correctamente.
 
@@ -121,7 +121,7 @@ Como ya muchos sabrán, Sublime Text, tiene una consola integrada, el problema c
 
 Muy bien, el código llama una consola externa que ejecuta el programa antes compilado, en este casco, la orden es:
 
-                "&&", "start", "cmd eme", "${file_path}/$file_base_name.exe"
+                "&&", "start", "cmd eme", "$file_path/$file_base_name.exe"
                 
 Bien, vamos explicando lo más importante:
 
@@ -135,7 +135,7 @@ Bien, vamos explicando lo más importante:
 
 Si vas a poner otro nombre asegúrate de dejar un espacio después de la primera comilla, el código debería verse así:
 
-                "&&", "start", " Myproject", "${file_path}/$file_base_name.exe"
+                "&&", "start", " Myproject", "$file_path/$file_base_name.exe"
                 
 De esa forma se generará una consola con el nombre que hayas puesto y que se puede personalizar.
 
@@ -164,7 +164,7 @@ No obstante, cuando se programa es posible que un compilador no sepa diferenciar
 
 Si nombras así tus archivos no tendrás problemas eliminando "cmd eme" (visto en la sección anterior) de tu código, ya que el compilador y la consola predeterminada podrán reconocer tu programa. Tú codigo puede quedar así sin ningún problema.
     
-                "&&", "start", "${file_path}/$file_base_name.exe"
+                "&&", "start", "$file_path/$file_base_name.exe"
 
 Sin embargo, si eliminas el comando "cmd eme" y estás acostumbrado a nombrar a tus archivos de la siguiente manera: "My project.cpp", "ultimo intento.cpp", "Ejercicio 02.cpp" "1.5.3.cpp"; tendrás un problema, el archivo se compilará normalmente en tu fichero, **pero**, la consola por defecto no reconocerá el programa debido a que tiene espacios y si el nombre tiene puntos, te saldrá un error el cual no reconoce la extensión del fichero.
 
