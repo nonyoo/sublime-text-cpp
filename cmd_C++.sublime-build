@@ -3,7 +3,7 @@
 
 {
 	
-	"cmd": ["g++", "-Wall", "-std=c++17", "$file_name", "-o", "${file_path}/$file_base_name.exe", "&&", "start", "cmd eme", "${file_path}/$file_base_name.exe"],
+	"cmd": ["g++", "-Wall", "-std=c++17", "$file_name", "-o", "$file_path/$file_base_name.exe", "&&", "start", "cmd eme", "$file_path/$file_base_name.exe"],
                 
 	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
 	"selector": "source.c++, source.c, source.cxx, source.cpp",
